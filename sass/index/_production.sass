@@ -1,0 +1,45 @@
+.production
+    padding-bottom: 125px
+    &-list
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        grid-gap: 20px
+    &-item
+        grid-column: span 2 / auto
+        position: relative
+        box-shadow: $shadow
+        border-radius: 30px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        padding: 30px 25px
+        min-height: 300px
+        background-color: #fff
+        &:nth-child(1), &:nth-child(4n + 1), &:nth-child(4n)
+            grid-column: span 3 / auto
+        &__img
+            position: absolute
+            width: 100%
+            height: 100%
+            background-repeat: no-repeat
+            background-position: right center
+            background-size: contain
+            top: 0
+            left: 0
+        &__title
+            max-width: 270px
+            color: $blue
+            position: relative
+            z-index: 1
+        &__dec
+            position: absolute
+            top: 15px
+            left: 15px
+            opacity: 0
+            visibility: hidden
+            transition: .3s opacity, .3s visibility
+            z-index: 1
+        &:hover
+            .production-item__dec
+                opacity: 1
+                visibility: visible
