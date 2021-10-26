@@ -1,0 +1,23 @@
+.news
+    &-list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 20px
+    &-item
+        color: $textBody
+        &__img
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            border-radius: 14px
+            margin-bottom: 25px
+            &-sizer
+                padding-bottom: 75%
+        &__date
+            margin-bottom: 15px
+        &__title
+            margin-bottom: 15px
+            transition: .3s color
+        &:hover
+            .news-item__title
+                color: $blue

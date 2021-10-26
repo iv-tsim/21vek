@@ -1,6 +1,40 @@
 .ind
+    &-container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: relative
     &-main
         background: $grad
         border-radius: 50px
         padding: 65px 110px 100px 110px
         color: #fff
+        width: 100%
+        max-width: 1035px
+        margin-left: 20px
+    &-title
+        max-width: 630px
+    &-text
+        max-width: 630px
+        margin-bottom: 25px
+    &-advantages
+        max-width: 500px
+        background-color: #fff
+        box-shadow: $shadow
+        padding: 30px 25px
+        border-radius: 25px
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: calc((100% - 1240px) / 2)
+        &__title
+            margin-bottom: 30px
+        &__list
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 25px
+        &__item
+            display: flex
+            align-items: center
+            &-img
+                margin-right: 15px
