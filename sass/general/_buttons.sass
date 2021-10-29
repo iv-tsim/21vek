@@ -6,6 +6,7 @@
     border-radius: 14px
     transition: .3s background-color, .3s border-color, .3s color
     border: none
+    cursor: pointer
     &:hover
         background-color: $red2
     &_transparent
@@ -20,3 +21,8 @@
         color: $red
         &:hover
             background-color: $blockGrey2
+
+
+@media (max-width: 800px)
+    .btn
+        padding: 12px 20px
